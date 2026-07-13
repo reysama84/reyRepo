@@ -1,0 +1,9 @@
+{
+  "name": "company-profile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static 3-page company profile site (Company Profile, Contact Us, Gallery).",
+  "scripts": {
+    "test": "node --test"
+  }
+}
