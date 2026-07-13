@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us — Company Profile</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">Aurora</span>
+      <span class="brand-sub">Solutions</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Company Profile</a>
+      <a href="contact.html" class="active" aria-current="page">Contact Us</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero-compact">
+      <div class="hero-inner">
+        <h1>Contact Us</h1>
+        <p class="lead">We'd love to hear from you. Reach out and we'll respond soon.</p>
+      </div>
+    </section>
+
+    <section class="section contact-grid">
+      <div class="contact-details">
+        <h2>Get in touch</h2>
+        <ul class="contact-list">
+          <li><strong>Address:</strong> 123 Innovation Street, Jakarta, Indonesia</li>
+          <li><strong>Email:</strong> <a href="mailto:hello@aurora.example">hello@aurora.example</a></li>
+          <li><strong>Phone:</strong> +62 21 555 0123</li>
+        </ul>
+      </div>
+
+      <div class="contact-form-wrap">
+        <h2>Send a message</h2>
+        <!-- Non-functional placeholder form: uses a mailto action; no backend is wired. -->
+        <p class="form-note">This form opens your email client — it is not connected to a backend.</p>
+        <form class="contact-form" action="mailto:hello@aurora.example" method="post" enctype="text/plain">
+          <label>
+            Name
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="btn" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; Aurora Solutions. All rights reserved.</p>
+    <nav aria-label="Footer">
+      <a href="index.html">Company Profile</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+  </footer>
+</body>
+</html>
