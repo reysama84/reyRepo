@@ -33,6 +33,22 @@ python3 -m http.server 8000
 # then open http://localhost:8000
 ```
 
+## Validation
+
+Because the site is dependency-free with no build step, structural correctness is
+guarded by a standard-library Python script instead of a JS test runner. It must
+pass before shipping any change:
+
+```bash
+python3 validate.py
+```
+
+It verifies that all three pages and the shared stylesheet exist, that every page
+links `styles.css` and cross-links to all three pages, that each page marks its own
+nav link active, that the **Visionet** brand appears in every `<title>` and brand
+mark, and that the contact form exposes the required labelled fields (name, email,
+subject, message). It exits `0` on success and `1` (listing each failure) otherwise.
+
 ## Notes
 
 - The contact form uses a `mailto:` action because there is no backend in this
